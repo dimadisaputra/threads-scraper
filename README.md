@@ -8,11 +8,11 @@ This project is a Python-based scraper for fetching and saving replies to posts 
 - Fetch replies to a specific Threads post
 - Save data in multiple formats (JSON, CSV, XLSX)
 - Paginate through all replies
-- Extract detailed information about each reply, including user data and engagement metrics
+- Extract detailed information about each reply
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.10+
 - Required Python packages (install via `pip install -r requirements.txt`):
   - requests
   - beautifulsoup4
@@ -27,7 +27,7 @@ This project is a Python-based scraper for fetching and saving replies to posts 
 git clone https://github.com/dimadisaputra/threads-scraper.git
 ```
 ```sh
-cd threads-reply-scraper
+cd threads-scraper
 ```
 2. Install the required packages:
 ```sh
@@ -42,7 +42,7 @@ COOKIE=your_threads_cookie_here
 
 Run the script from the command line:
 ```sh
-python main.py --url <threads_post_url> --format <output_format> --output_dir <output_directory>
+python threads_reply.py --url <threads_post_url> --format <output_format> --output_dir <output_directory>
 ```
 
 Arguments:
@@ -52,5 +52,5 @@ Arguments:
 
 Example:
 ```sh
-python main.py --url "https://www.threads.net/@username/post/ABC123" --format csv --output_dir output
+python threads_reply.py --url "https://www.threads.net/@username/post/ABC123" --format csv --output_dir output
 ```
